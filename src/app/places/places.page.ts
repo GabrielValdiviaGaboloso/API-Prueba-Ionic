@@ -16,6 +16,9 @@ export class PlacesPage implements OnInit {
 
   ngOnInit() {
     this.places = this.placeService.getPLaces()
+    console.log(this.places);
   }
-
+  ionViewWillEnter() {
+    this.places = this.placeService.getPLaces()
+  }
 }
