@@ -10,10 +10,14 @@
       <ion-avatar slot="start">
         <ion-img [src]="place.imageURL"></ion-img>
       </ion-avatar>
-
       <ion-label>
         {{place.title}}
       </ion-label>
     </ion-item>
   </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" (click)="addNewPlace()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
